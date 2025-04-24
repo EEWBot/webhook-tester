@@ -27,7 +27,6 @@ pub enum Mode {
 
 #[derive(Debug, Clone, Parser)]
 pub struct Cli {
-    /// https://datatracker.ietf.org/doc/html/rfc3986#section-3
     #[arg(long)]
     pub endpoint_url: String,
 
