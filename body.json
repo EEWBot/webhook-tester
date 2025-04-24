@@ -1,0 +1,37 @@
+{
+  "content": "<@349168429980188672>",
+  "embeds": [
+    {
+      "title": "試験情報 (試験速報)",
+      "description": "※これは地震情報ではありません。",
+      "url": "https://github.com/EEWBot/webhook-tester/",
+      "color": 7070330,
+      "fields": [
+        {
+          "name": "試験4",
+          "value": "茨城県つくば市",
+          "inline": true
+        },
+        {
+          "name": "試験3",
+          "value": "茨城県つくば市",
+          "inline": true
+        },
+        {
+          "name": "試験2",
+          "value": "茨城県つくば市",
+          "inline": true
+        },
+        {
+          "name": "試験1",
+          "value": "茨城県つくば市",
+          "inline": true
+        }
+      ],
+      "image": {
+         "url": "https://eewbot.net/imgs/ogp.png?𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀𤴀"
+      }
+    }
+  ],
+  "attachments": []
+}

@@ -28,11 +28,11 @@ pub async fn req(body: serde_json::Value) -> Result<String> {
 
     client
         .post(&env.endpoint_url)
-        .json(&Request {
+        .json(&[Request {
             body,
             targets: &env.targets,
             retry_limit: env.retry_limit,
-        })
+        }])
         .send()
         .await
         .context("Failed to send request to server")?
