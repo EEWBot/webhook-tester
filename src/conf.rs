@@ -27,13 +27,16 @@ pub enum Mode {
 
 #[derive(Debug, Clone, Parser)]
 pub struct Cli {
-    #[arg(long)]
+    #[arg(env, long)]
     pub endpoint_url: String,
 
-    #[arg(long)]
+    #[arg(env, long)]
+    pub token: String,
+
+    #[arg(env, long)]
     pub targets: PathBuf,
 
-    #[arg(long, default_value_t = 3)]
+    #[arg(env, long, default_value_t = 3)]
     pub retry_limit: usize,
 
     #[command(subcommand)]

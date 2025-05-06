@@ -8,6 +8,7 @@ pub static ENV: OnceCell<Env> = OnceCell::new();
 pub struct Env {
     pub targets: Vec<String>,
     pub endpoint_url: String,
+    pub token: String,
     pub retry_limit: usize,
 }
 
@@ -28,6 +29,7 @@ pub async fn req(body: serde_json::Value) -> Result<String> {
 
     client
         .post(&env.endpoint_url)
+        .bearer_auth(&env.token)
         .json(&[Request {
             body,
             targets: &env.targets,

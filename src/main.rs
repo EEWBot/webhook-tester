@@ -21,12 +21,14 @@ async fn main() {
                 .last()
                 .map(|v| v.to_string())
                 .filter(|s| !String::is_empty(s))
+                .map(|v| format!("{v}?wait=true"))
         })
         .collect();
 
     println!("{} target(s) detected!", targets.len());
 
     ENV.set(Env {
+        token: cli.token,
         targets,
         endpoint_url: cli.endpoint_url,
         retry_limit: cli.retry_limit,
